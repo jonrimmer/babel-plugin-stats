@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+		title Babel Plugin Stats
+	body
+		h1 Babel Plugin Stats
+		p Babel plugin usage as a rough proxy for the popularity of ES2015+ features.
+		
+		ul
+			each plugin in plugins
+				li
+					p Name:
+						= plugin.name
+					p	Downloads:
+						= plugin.downloads
+					ul
+						each feature in plugin.features
+							li
+								p Name:
+									= feature.name
+								p Downloads:
+									= feature.dowloads

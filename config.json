@@ -1,0 +1,91 @@
+{
+	"features": [
+		{
+			"name": "Do Expressions",
+			"package": "babel-plugin-transform-do-expressions",
+			"proposal": ""
+		},{
+			"name": "Function Bind Operator",
+			"package": "babel-plugin-transform-function-bind",
+			"proposal": "http://babeljs.io/blog/2015/05/14/function-bind/"
+		},{
+			"name": "Callable Class Constructor",
+			"package": "babel-plugin-transform-class-constructor-call",
+			"proposal": "https://github.com/tc39/ecma262/blob/master/workingdocs/callconstructor.md"
+		},{
+			"name": "Class Properties",
+			"package": "babel-plugin-transform-class-properties",
+			"proposal": "https://github.com/jeffmo/es-class-static-properties-and-fields"
+		},{
+			"name": "Decorators",
+			"package": "babel-plugin-transform-decorators",
+			"proposal": "https://github.com/wycats/javascript-decorators/blob/master/README.md"
+		},{
+			"name": "Export Extensions",
+			"package": "babel-plugin-transform-export-extensions",
+			"proposal": "https://github.com/leebyron/ecmascript-more-export-from"
+		},{
+			"name": "Trailing Function Commas",
+			"package": "babel-plugin-syntax-trailing-function-commas",
+			"proposal": ""
+		},{
+			"name": "Object Rest/Spread Properties",
+			"package": "babel-plugin-transform-object-rest-spread",
+			"proposal": "https://github.com/sebmarkbage/ecmascript-rest-spread"
+		},{
+			"name": "Async / Await",
+			"package": "babel-plugin-transform-async-to-generator",
+			"proposal": "https://github.com/tc39/ecmascript-asyncawait"
+		},{
+			"name": "Exponentiation Operator",
+			"package": "babel-plugin-transform-exponentiation-operator",
+			"proposal": "https://github.com/rwaldron/exponentiation-operator"
+		}
+	],
+	"plugins": [
+		{
+			"name": "Stage 0 Preset",
+			"package": "babel-preset-stage-0",
+			"includedFeatures": [
+				"babel-plugin-transform-do-expressions",
+				"babel-plugin-transform-function-bind"
+			],
+			"includedPlugins": [
+				"babel-preset-stage-1",
+				"babel-preset-stage-2",
+				"babel-preset-stage-3"
+			]
+		},{
+			"name": "Stage 1 Preset",
+			"package": "babel-preset-stage-1",
+			"includedFeatures": [
+				"babel-plugin-transform-class-constructor-call",
+				"babel-plugin-transform-class-properties",
+				"babel-plugin-transform-decorators",
+				"babel-plugin-transform-export-extensions"
+			],
+			"includedPlugins": [
+				"babel-preset-stage-2",
+				"babel-preset-stage-3"
+			]
+		},{
+			"name": "Stage 2 Preset",
+			"package": "babel-preset-stage-2",
+			"includedFeatures": [
+				"babel-plugin-syntax-trailing-function-commas",
+				"babel-plugin-transform-object-rest-spread"
+			],
+			"includedPlugins": [
+				"babel-preset-stage-3"
+			]
+		},{
+			"name": "Stage 3 Preset",
+			"package": "babel-preset-stage-3",
+			"includedFeatures": [
+				"babel-plugin-transform-async-to-generator",
+				"babel-plugin-transform-exponentiation-operator"
+			],
+			"includedPlugins": []
+		}
+	]
+}
